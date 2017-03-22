@@ -15,6 +15,7 @@
 		F995601C1E829B1000488195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F995601A1E829B1000488195 /* LaunchScreen.storyboard */; };
 		F99560271E829B1000488195 /* _1_HomeWork_NSDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F99560261E829B1000488195 /* _1_HomeWork_NSDateTests.m */; };
 		F99560321E829B1000488195 /* _1_HomeWork_NSDateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F99560311E829B1000488195 /* _1_HomeWork_NSDateUITests.m */; };
+		F99560411E82A47700488195 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = F99560401E82A47700488195 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		F995602D1E829B1000488195 /* 11-HomeWork-NSDateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "11-HomeWork-NSDateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99560311E829B1000488195 /* _1_HomeWork_NSDateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _1_HomeWork_NSDateUITests.m; sourceTree = "<group>"; };
 		F99560331E829B1000488195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F995603F1E82A47700488195 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		F99560401E82A47700488195 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 			children = (
 				F995600F1E829B1000488195 /* AppDelegate.h */,
 				F99560101E829B1000488195 /* AppDelegate.m */,
+				F995603F1E82A47700488195 /* Student.h */,
+				F99560401E82A47700488195 /* Student.m */,
 				F99560121E829B1000488195 /* ViewController.h */,
 				F99560131E829B1000488195 /* ViewController.m */,
 				F99560151E829B1000488195 /* Main.storyboard */,
@@ -276,6 +281,7 @@
 				F99560141E829B1000488195 /* ViewController.m in Sources */,
 				F99560111E829B1000488195 /* AppDelegate.m in Sources */,
 				F995600E1E829B1000488195 /* main.m in Sources */,
+				F99560411E82A47700488195 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

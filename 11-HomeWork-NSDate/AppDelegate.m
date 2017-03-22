@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  11-HomeWork-NSDate
+//  11-HomeWork-Date
 //
 //  Created by Slava on 22.03.17.
 //  Copyright © 2017 Slava. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "Student.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,24 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSMutableArray *arrayStud = [NSMutableArray new];   // создаем изменяемый массив
+    // создаем 30 студентов
+    for (int i = 0; i < 30; i++) {
+        Student *student = [Student new];
+        [arrayStud addObject:student];
+    }
+    
+    // делаем сотрировку
+    [arrayStud sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        return [[obj1 dateOfBirth] compare:[obj2 dateOfBirth]];
+    }];
+    
+    NSDateFormatter *dateFormatter = [NSDateFormatter new];
+    [dateFormatter setDateFormat:@"dd.MM.yyyy"];
+    for (Student *stud in arrayStud) {
+        NSLog(@"%@ %@: %@", stud.name, stud.lastName,[dateFormatter stringFromDate:stud.dateOfBirth]);
+    }
+    
     return YES;
 }
 
